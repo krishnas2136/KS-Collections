@@ -1,47 +1,68 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KS Collections | Digital Art Portfolio</title>
+    <title>KS Collections | Art & Tech</title>
     <style>
-        body { font-family: 'Inter', sans-serif; margin: 0; text-align: center; background-color: #f3f0ff; color: #333; }
-        header { background: #dcd0ff; padding: 60px 20px; border-bottom: 5px solid #b29dff; }
-        h1 { margin: 10px 0; color: #4a3b8d; font-size: 2.5rem; }
-        .logo-box { background: white; display: inline-block; padding: 20px; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        .gallery { display: flex; flex-wrap: wrap; justify-content: center; padding: 40px 20px; }
-        .design-card { background: white; margin: 15px; padding: 20px; border-radius: 15px; box-shadow: 0 8px 16px rgba(0,0,0,0.05); width: 280px; transition: 0.3s; }
-        .design-card:hover { transform: translateY(-10px); }
-        footer { background: #4a3b8d; color: white; padding: 30px; margin-top: 50px; font-size: 0.9rem; }
-        .btn { background: #7c5cfc; color: white; padding: 12px 25px; text-decoration: none; border-radius: 30px; display: inline-block; margin-top: 15px; font-weight: bold; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f9f9f9; color: #333; scroll-behavior: smooth; }
+        header { background: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        nav a { margin-left: 20px; text-decoration: none; color: #7c5cfc; font-weight: bold; }
+        .hero { background: linear-gradient(135deg, #7c5cfc, #ff9068); color: white; padding: 60px 20px; text-align: center; }
+        section { padding: 50px 10%; text-align: center; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 15px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .card img { width: 100%; border-radius: 10px; }
+        .about { background: #fff; line-height: 1.6; }
+        .contact { background: #7c5cfc; color: white; }
+        .btn { display: inline-block; padding: 10px 20px; background: #ff9068; color: white; text-decoration: none; border-radius: 25px; margin-top: 10px; }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-box">
-        <h2 style="margin:0; color:#7c5cfc;">KS</h2>
-    </div>
-    <h1>KS COLLECTIONS</h1>
-    <p>Aesthetic Doodles | Personalized Monograms | Boho Vibes</p>
+    <h2 style="margin:0;">KS Collections</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section class="gallery">
-    <img src="Cup Back KS Design.png" width="200">
-    <img src="Leafy Check KS Design.png" width="200">
-    <img src="Power of A KS Design.png" width="200">
-    <img src="Power of B KS Design.png" width="200">
-    <img src="Power of C KS Design.png" width="200">
-    <div class="design-card">
-    <h3>My Official Shop</h3>
-    <p>Explore my latest collection of stickers, apparel, and more on Redbubble.</p>
-    <a href="https://KSCollections.redbubble.com" target="_blank" class="btn">Visit My Shop</a>
+<div class="hero" id="home">
+    <h1>Art Meets Technology</h1>
+    <p>Hand-crafted digital designs by a future Engineer.</p>
+</div>
+
+<section id="gallery">
+    <h2>My Latest Designs</h2>
+    <div class="gallery">
+        <div class="card"><img src="Cup Back KS Design.png" alt="Art 1"><h3>Design 1</h3><a href="https://KSCollections.redbubble.com" class="btn">Shop Now</a></div>
+        <div class="card"><img src="Leafy Check KS Design.png" alt="Art 2"><h3>Design 2</h3><a href="https://KSCollections.redbubble.com" class="btn">Shop Now</a></div>
+        <div class="card"><img src="Power of A KS Design.png" alt="Art 2"><h3>Design 2</h3><a href="https://KSCollections.redbubble.com" class="btn">Shop Now</a></div>
+        <div class="card"><img src="Power of B KS Design.png" alt="Art 2"><h3>Design 2</h3><a href="https://KSCollections.redbubble.com" class="btn">Shop Now</a></div>
+        <div class="card"><img src="Power of C KS Design.png" alt="Art 2"><h3>Design 2</h3><a href="https://KSCollections.redbubble.com" class="btn">Shop Now</a></div>
+    </div>
+    </div>
+    </div>
     </div>
 </section>
 
-<footer>
-    <p>KS Collections ACTIVATED</p>
-    <p>&copy; 2026 | CSE Student & Digital Artist</p>
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I am a 2nd year B.Tech Computer Science student. I create art that reflects modern aesthetics and tech vibes. KS Collections is my brand where I turn ideas into stickers, apparel, and digital products.</p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Connect With Me</h2>
+    <p>For custom designs or tech collaboration, find me here:</p>
+    <a href="https://www.instagram.com/activatedks01?igsh=MWIycjBmMzJoOWF0ag==" style="color:white;">Instagram</a> | 
+    <a href="mailto:activatedks@gmail.com" style="color:white;">Email Me</a>
+</section>
+
+<footer style="text-align:center; padding: 20px; font-size: 0.8rem;">
+    &copy; 2026 KS Collections. Built with ❤️ by Krishna S.
 </footer>
 
 </body>
